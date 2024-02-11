@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+li{
+    float: left;
+}
+
+li a,.db-Btn{
+    color: white;
+    padding: 16px 16px;
+    display:block;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a.active{
+    background-color: darkred;
+}
+
+li a:hover, .dropdown:hover .dp-Btn{
+    background-color: #111;
+}
+
+.db-Content{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    padding: 0;
+    width: 170px;
+}
+
+.dropdown:hover .db-Content{
+    display: block;
+}
+
+.db-Content a:hover{
+    background-color: darkred;
+}
